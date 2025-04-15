@@ -1,0 +1,131 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+
+.content {
+    width: 80%;
+    color: white;
+    text-align: center;
+    line-height: 1.8;
+    position: relative;
+    padding-top: 100px;
+    margin-left: 250px;
+    
+    z-index: 2;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        margin-left: 100px;
+        padding-top: 50px;
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+/* تنسيق العناوين والفقرات */
+.content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.content p {
+    font-size: 1.5rem;
+    color: rgb(209, 209, 209);
+}
+
+.content span {
+    color: rgb(3, 127, 255);
+}
+
+/* تعديل الأيقونات في الأسفل */
+.contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    background-color: inherit;
+    text-align: center;
+}
+
+.contact-us i {
+    display: inline-block;
+    padding: 5px ;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    color: #333;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-out;
+    margin-right: 10px;
+}
+
+.contact-us i:hover {
+    border-color: rgb(3, 127, 255);
+    color: rgb(3, 127, 255);
+}
+
+/* تنسيق السلايدر */
+.slider-container {
+    width: 80%;
+    margin: auto;
+}
+
+.swiper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+}
+
+.sliderr {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    margin-right: 100px;
+}
+
+.swiper-slide img {
+    width: 80px;
+}
+
+/* التعديل في السلايدر في الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .sliderr {
+        display: none;
+        /* إخفاء السلايدر في الشاشات الصغيرة */
+    }
+
+    .content {
+        margin-left: 43px !important;
+        /* إزالة المسافة من اليسار في الشاشات الصغيرة */
+        padding-top: 120px;
+        /* ضبط المسافة من الأعلى حسب الحاجة */
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+}
